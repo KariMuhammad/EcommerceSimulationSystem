@@ -73,7 +73,3 @@ src/
 git clone https://github.com/yourusername/EcommerceSimulationSystem.git
 cd EcommerceSimulationSystem
 ```
-
-```bash
-javac 
-```
