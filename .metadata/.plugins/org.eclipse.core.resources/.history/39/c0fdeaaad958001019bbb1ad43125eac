@@ -1,0 +1,5 @@
+package karim.rules;
+
+public class isNameNotEmpty {
+
+}

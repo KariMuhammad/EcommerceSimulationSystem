@@ -1,0 +1,21 @@
+package karim.rules;
+
+Product
+
+public class IsNameNotEmpty {
+	private static int count = 0;
+	private static String[] errors = new String[3];
+	
+	public static boolean isNameNotEmpty(String name) {
+		if (name.length() == 0) {
+			errors[count] = "Name is Required!";
+			return false;
+		}
+		
+		return true;
+	}
+	
+	public static String[] getErrors() {
+		return errors;
+	}
+}

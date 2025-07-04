@@ -1,0 +1,9 @@
+package karim;
+
+public class ExpireableProduct extends Product {
+
+	@Override
+	boolean isExpireable() {
+		return true;
+	}
+}

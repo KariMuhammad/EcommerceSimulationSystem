@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
+    <fullyQualifiedTypeName name="karim.ExpireableProduct"/>
+    <fullyQualifiedTypeName name="java.sql.Date"/>
+    <fullyQualifiedTypeName name="karim.ShippableProduct"/>
+    <fullyQualifiedTypeName name="karim.Product"/>
+    <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+    <fullyQualifiedTypeName name="karim.contracts.Rule"/>
+    <fullyQualifiedTypeName name="karim.contracts.Product"/>
+    <fullyQualifiedTypeName name="karim.models.ExpirableShippableProduct"/>
+    <fullyQualifiedTypeName name="karim.models.CartItem"/>
+    <fullyQualifiedTypeName name="karim.ValidationException"/>
+    <fullyQualifiedTypeName name="karim.contracts.IRule"/>
+    <fullyQualifiedTypeName name="karim.Validator"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="javax.swing.border.EmptyBorder"/>
+    <fullyQualifiedTypeName name="karim.rules.products.NameEmptyRule"/>
+    <fullyQualifiedTypeName name="karim.rules.products.PositivePriceRule"/>
+    <fullyQualifiedTypeName name="karim.rules.products.AvailableStockRule"/>
+    <fullyQualifiedTypeName name="karim.models.Product"/>
+    <fullyQualifiedTypeName name="karim.models.ExpirableProduct"/>
+    <fullyQualifiedTypeName name="karim.models.ShippableProduct"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="karim.EcommerceApp"/>
+</qualifiedTypeNameHistroy>

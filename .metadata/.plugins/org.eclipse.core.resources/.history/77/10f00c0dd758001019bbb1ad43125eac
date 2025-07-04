@@ -1,0 +1,6 @@
+package karim.contracts;
+
+public interface Product {
+	boolean isExpireable();
+	boolean isShippable();
+}

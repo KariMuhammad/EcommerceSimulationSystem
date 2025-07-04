@@ -1,0 +1,15 @@
+package karim;
+
+public class ShippableProduct extends Product {
+	
+	double weight;
+	
+	
+	/**
+	 * All objects in ShippableProduct is always be shipped
+	 */
+	@Override
+	boolean isShippable() {
+		return true;
+	}
+}

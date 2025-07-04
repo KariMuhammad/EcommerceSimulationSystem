@@ -1,0 +1,12 @@
+package validations;
+
+public class ProductValidations {
+	private static int count = 0;
+	private String[] errors = new String[3];
+	
+	public static boolean isNameExi(String name) {
+		if (name.length() == 0) {
+			errors[count] = "Name is Required!";
+		}
+	}
+}

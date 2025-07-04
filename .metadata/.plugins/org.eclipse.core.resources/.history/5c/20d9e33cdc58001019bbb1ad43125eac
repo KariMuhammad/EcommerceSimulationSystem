@@ -1,0 +1,12 @@
+package karim.rules;
+
+import karim.ValidationException;
+import karim.contracts.Rule;
+import karim.models.Product;
+
+public class NameEmptyRule implements Rule<Product> {	
+	@Override
+	public void check(Product target) {
+		if (target.getName().length() == 0) throw new ValidationException("Product name is required!");
+	}
+}

@@ -1,0 +1,7 @@
+package karim.contracts;
+
+import karim.ValidationException;
+
+public interface Rule<T> {
+	public void check(T target) throws ValidationException;
+}

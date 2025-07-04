@@ -1,0 +1,13 @@
+package karim.rules;
+
+import karim.Product;
+import karim.contracts.Rule;
+
+public class IsNameEmpty implements Rule<Product> {	
+	@Override
+	public boolean check(Product target) {
+		// TODO Auto-generated method stub
+		if (target.getName().length() == 0)
+		return false;
+	}
+}

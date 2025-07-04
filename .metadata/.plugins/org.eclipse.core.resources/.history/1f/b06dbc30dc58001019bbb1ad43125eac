@@ -1,0 +1,5 @@
+package karim.contracts;
+
+public interface ExpireableProduct {
+	
+}

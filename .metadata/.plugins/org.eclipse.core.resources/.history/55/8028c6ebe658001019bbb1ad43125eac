@@ -1,0 +1,15 @@
+package karim;
+
+import java.util.List;
+
+import karim.models.Product;
+import karim.rules.products.AvailableStockRule;
+import karim.rules.products.NameEmptyRule;
+import karim.rules.products.PositivePriceRule;
+
+public class EcommerceApp {
+
+	public static void start(String[] args) {
+		Validator<Product> validatorsOfProducts = Validator.of(List.of(new NameEmptyRule(), new PositivePriceRule(), new AvailableStockRule() ))
+	}
+}

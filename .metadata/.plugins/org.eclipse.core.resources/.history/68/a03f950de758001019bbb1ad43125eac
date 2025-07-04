@@ -1,0 +1,20 @@
+package karim.models;
+
+import java.util.Date;
+
+public class ExpirableShippableProduct extends ExpireableProduct {
+	private double weight;
+	
+	public ExpirableShippableProduct(String name, double price, int quantity, Date expireAt, double weight) {
+		super(name, price, quantity, expireAt);
+		this.weight = weight;
+	}
+
+	public double getWeight() {
+		return weight;
+	}
+
+	public void setWeight(double weight) {
+		this.weight = weight;
+	}
+}

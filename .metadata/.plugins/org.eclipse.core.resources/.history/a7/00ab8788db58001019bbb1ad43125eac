@@ -1,0 +1,13 @@
+package karim.rules;
+
+import karim.contracts.Rule;
+import karim.models.Product;
+
+public class NameEmptyRule implements Rule<Product> {	
+	@Override
+	public boolean check(Product target) {
+		if (target.getName().length() == 0) return true;
+		
+		return false;
+	}
+}

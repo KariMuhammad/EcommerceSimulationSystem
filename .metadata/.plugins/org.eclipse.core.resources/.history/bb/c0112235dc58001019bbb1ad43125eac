@@ -1,0 +1,7 @@
+package karim.contracts;
+
+public interface Product {
+	boolean isExpireable();
+	boolean isShippable();
+	void reduceQuantity(int amount);
+}

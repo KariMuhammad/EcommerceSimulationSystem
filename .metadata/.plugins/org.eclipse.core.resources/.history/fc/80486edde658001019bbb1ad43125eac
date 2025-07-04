@@ -1,0 +1,27 @@
+package karim.rules;
+
+import java.util.Date;
+
+import karim.ValidationException;
+import karim.contracts.IRule;
+import karim.models.ExpirableShippableProduct;
+import karim.models.ExpirableProduct;
+import karim.models.Product;
+
+public class ExpiryDataRule implements IRule<Product> {
+	@Override
+	public void check(Product target) throws ValidationException {
+		// TODO Auto-generated method stub
+		if (target.isExpireable()) {
+			Date expireDate = switch (target) {
+				case ExpirableShippableProduct esp -> esp.getExpireAt();
+				case ExpireableProduct expirableProduct -> expirableProduct.getExpireAt();
+				default -> null;
+			};
+			
+			if (expireDate != null && !expireDate.after(new Date())) {
+				throw new ValidationException("Expiry Date must be in the future");
+			}
+		}
+	}
+}

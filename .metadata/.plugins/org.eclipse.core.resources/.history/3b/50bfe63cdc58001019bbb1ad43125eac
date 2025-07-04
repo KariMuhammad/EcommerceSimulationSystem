@@ -1,0 +1,13 @@
+package karim.rules;
+
+import karim.ValidationException;
+import karim.contracts.Rule;
+import karim.models.Product;
+
+public class PositivePriceRule implements Rule<Product>{
+	
+	@Override
+	public void check(Product target) {
+		if (target.getPrice() < 0) throw new ValidationException("Product price must be positive number");
+	}
+}

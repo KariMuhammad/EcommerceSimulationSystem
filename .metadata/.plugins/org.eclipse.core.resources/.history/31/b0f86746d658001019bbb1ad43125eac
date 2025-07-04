@@ -1,0 +1,8 @@
+package karim;
+
+public class ShippableProduct extends Product {
+	@Override
+	boolean isShippable() {
+		return true;
+	}
+}

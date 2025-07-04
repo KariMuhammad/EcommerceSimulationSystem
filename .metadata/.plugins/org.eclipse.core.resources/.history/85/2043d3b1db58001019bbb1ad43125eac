@@ -1,0 +1,14 @@
+package karim.rules;
+
+import karim.contracts.Rule;
+import karim.models.Product;
+
+public class PositivePriceRule implements Rule<Product>{
+	
+	@Override
+	public boolean check(Product target) {
+		if (target.getPrice() > 0) return true;
+		
+		return false;
+	}
+}

@@ -1,0 +1,26 @@
+package karim;
+
+import java.util.Date;
+
+public class ExpireableProduct extends Product {
+	
+	private Date expireAt;
+	
+	public ExpireableProduct(String name, double price, int quantity, Date expireAt) {
+		super(name, price, quantity);
+		this.expireAt = expireAt;
+	}
+	
+	@Override
+	boolean isExpireable() {
+		return true;
+	}
+
+	public Date getExpireAt() {
+		return expireAt;
+	}
+
+	public void setExpireAt(Date expireAt) {
+		this.expireAt = expireAt;
+	}
+}

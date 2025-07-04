@@ -1,0 +1,15 @@
+package karim.rules;
+
+import karim.Product;
+import karim.contracts.Rule;
+
+public class IsNameNotEmpty implements Rule<Product> {
+	private static int count = 0;
+	private static String[] errors = new String[3];
+	
+	@Override
+	public boolean check(Product target) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+}

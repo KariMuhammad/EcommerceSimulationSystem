@@ -1,0 +1,8 @@
+package karim.rules;
+
+import karim.Product;
+import karim.contracts.Rule;
+
+public class PositivePriceRule implements Rule<Product>{
+	
+}

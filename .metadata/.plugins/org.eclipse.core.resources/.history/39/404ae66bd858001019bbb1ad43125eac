@@ -1,0 +1,25 @@
+package karim;
+
+public class ShippableProduct extends Product {
+	
+	private double weight;
+	
+	
+	/**
+	 * All objects in ShippableProduct is always be shipped
+	 */
+	@Override
+	boolean isShippable() {
+		return true;
+	}
+
+
+	public double getWeight() {
+		return weight;
+	}
+
+
+	public void setWeight(double weight) {
+		this.weight = weight;
+	}
+}

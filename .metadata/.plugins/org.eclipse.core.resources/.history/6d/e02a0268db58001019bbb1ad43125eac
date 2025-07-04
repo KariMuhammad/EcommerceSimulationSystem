@@ -1,0 +1,5 @@
+package karim.contracts;
+
+public interface Rule<T> {
+	public boolean check(T target);
+}

@@ -1,0 +1,26 @@
+package karim;
+
+import java.time.LocalDate;
+import java.util.Date;
+import java.util.List;
+
+import karim.models.ExpirableProduct;
+import karim.models.Product;
+import karim.models.ShippableProduct;
+import karim.rules.products.AvailableStockRule;
+import karim.rules.products.NameEmptyRule;
+import karim.rules.products.PositivePriceRule;
+
+public class EcommerceApp {
+
+	public static void start(String[] args) {
+		Validator<Product> validatorsOfProducts = Validator.of(List.of(
+					new NameEmptyRule(),
+					new PositivePriceRule(),
+					new AvailableStockRule() ));
+		
+		Product cheese = new ExpireableProduct("Cheese", 199.75, 100, LocalDate.now().plusDays(10));
+		
+		Product Tv = new ShippableProduct("LG NanoCell AI NANO80 4K", 67_999, 5, ‎45.2);
+	}
+}
